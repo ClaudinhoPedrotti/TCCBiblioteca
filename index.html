@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Index</title>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.0/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.0/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar-fixed">
+    <!--- Título/menuMobile -->
+    <nav class="grey darken-4" role="navigation">
+      <a href="#" data-activates="nav-mobile" class="button-collapse show-on-large">
+        <i class="material-icons">menu</i>
+      </a>
+      <h3 class="center" id="titulo">Biblioteca</h3>
+    </nav>
+  </nav>
+
+  <ul id="nav-mobile" class="side-nav sidenav-fixed">
+    <li>
+      <div class="user-view">
+        <div class="background #616161 grey darken-2"></div>
+
+        <a href="#user"><img class="circle"
+            src="https://images-na.ssl-images-amazon.com/images/I/81FYYq3319L._RI_.jpg"></a>
+        <a><span class="white-text name">RM/ETEC</span></a>
+        <a><span class="white-text email">Email/Login</span></a>
+      </div>
+
+      <div class="switch" id="modo-dark">
+        Modo Dark
+        <label id="label-dark">
+          Off
+          <input type="checkbox">
+          <span class="lever"></span>
+          On
+        </label>
+      </div>
+
+    </li>
+
+    <li><a href="index.html"><i class="material-icons">home</i>Início</a></li>
+    <li><a href="cadastrar-livros.html"><i class="material-icons">library_add</i>Cadastrar publicações</a></li>
+    <li><a href="#titulos"><i class="material-icons">library_books</i>Publicações cadastradas</a></li>
+    <li><a href="#saida"><i class="material-icons">local_library</i>Saída de publicações</a></li>
+    <li><a href="#devolucao" id="dev-ajust"><i class="material-icons">loop</i>Devolução de publicações</a></li>
+    <li><a href="#reserva"><i class="material-icons">more</i>Reservas de publicações</a></li>
+    <li><a href="#usuarios"><i class="material-icons">account_box</i>Usuários</a></li>
+    <li><a href="tabelas.html"><i class="material-icons">table_chart</i>Cadastro de tabelas</a></li>
+    <li><a id="leave" href="login.html"><i class="material-icons">clear</i>Sair</a></li>
+
+    <!-- <ul id="slide-out" class="sidenav">
+      <li class="no-padding">
+        <ul class="collapsible collapsible-acordion">
+          <li>
+            <a class="collapsible-header" href="tabelas.html" id="text-table"><i class="material-icons" id="push_icon">table_chart</i>
+              Tabelas<i class="material-icons right">arrow_right</i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a class="left table-center" href="#!">Autores</a></li>
+                <li><a class="left table-center" href="#!">Editores</a></li>
+                <li><a class="left table-center" href="#!">Teste 3 </a></li>
+                <li><a class="left table-center" href="#!">Teste 4</a></li>
+                <li><a class="left table-center" href="#!">Teste 5</a></li>
+                <li><a class="left table-center" href="#!">Teste 6</a></li>
+                <li><a class="left table-center" href="#!">Teste 7</a></li>
+                <li><a class="left table-center" href="#!">Teste 8</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul> -->
+
+
+  </ul>
+
+
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+  <script src="init.js"></script>
+</body>
+
+</html>

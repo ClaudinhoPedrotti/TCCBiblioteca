@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livros</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.0/css/materialize.min.css">
+    <link rel="stylesheet" href="http://github.hubspot.com/odometer/themes/odometer-theme-default.css" />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.0/js/materialize.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="all"
+        rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav class="navbar-fixed menu-ajust">
+        <!--- Título/menuMobile -->
+        <nav class="grey darken-4" role="navigation">
+            <a href="#" data-activates="nav-mobile" class="button-collapse show-on-large">
+                <i class="material-icons">menu</i>
+            </a>
+            <h3 class="center" id="titulo">Biblioteca</h3>
+        </nav>
+    </nav>
+
+    <ul id="nav-mobile" class="side-nav sidenav-fixed ul-ajust">
+        <li>
+            <div class="user-view">
+                <div class="background #616161 grey darken-2"></div>
+
+                <a href="#user"><img class="circle"
+                        src="https://images-na.ssl-images-amazon.com/images/I/81FYYq3319L._RI_.jpg"></a>
+                <a><span class="white-text name">RM/ETEC</span></a>
+                <a><span class="white-text email">Email/Login</span></a>
+            </div>
+            <div class="switch" id="modo-dark">
+                Modo Dark
+                <label id="label-dark">
+                    Off
+                    <input type="checkbox">
+                    <span class="lever"></span>
+                    On
+                </label>
+            </div>
+        </li>
+
+        <li><a href="index.html"><i class="material-icons">home</i>Início</a></li>
+        <li><a href="#cadastro"><i class="material-icons">library_add</i>Cadastrar publicações</a></li>
+        <li><a href="#titulos"><i class="material-icons">library_books</i>Publicações cadastradas</a></li>
+        <li><a href="#saida"><i class="material-icons">local_library</i>Saída de publicações</a></li>
+        <li><a href="#devolucao" id="dev-ajust"><i class="material-icons">loop</i>Devolução de publicações</a></li>
+        <li><a href="#reserva"><i class="material-icons">more</i>Reservas de publicações</a></li>
+        <li><a href="#usuarios"><i class="material-icons">account_box</i>Usuários</a></li>
+        <li><a href="tabelas.html"><i class="material-icons">table_chart</i>Cadastro de tabelas</a></li>
+        <li><a id="leave" href="#exit"><i class="material-icons">clear</i>Sair</a></li>
+
+        <!-- <ul id="slide-out" class="sidenav">
+              <li class="no-padding">
+                <ul class="collapsible collapsible-acordion">
+                  <li>
+                    <a class="collapsible-header" href="tabelas.html" id="text-table"><i class="material-icons" id="push_icon">table_chart</i>
+                      Tabelas<i class="material-icons right">arrow_right</i></a>
+                    <div class="collapsible-body">
+                      <ul>
+                        <li><a class="left table-center" href="#!">Autores</a></li>
+                        <li><a class="left table-center" href="#!">Editores</a></li>
+                        <li><a class="left table-center" href="#!">Teste 3 </a></li>
+                        <li><a class="left table-center" href="#!">Teste 4</a></li>
+                        <li><a class="left table-center" href="#!">Teste 5</a></li>
+                        <li><a class="left table-center" href="#!">Teste 6</a></li>
+                        <li><a class="left table-center" href="#!">Teste 7</a></li>
+                        <li><a class="left table-center" href="#!">Teste 8</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul> -->
+    </ul>
+    <div class="container">
+        <div class="card" id="table-cadastro">
+            <div class="card-tabs">
+                <ul class="tabs tabs-fixed-width">
+                    <li class="tab cad-disable"><a href="#autores1">Cadastro de publicações</a></li>
+                </ul>
+            </div>
+            <div class="card-content grey lighten-4">
+                <div id="autores1">
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input id="first_name" type="text" class="validate">
+                                    <label for="first_name">Título Principal</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input id="last_name" type="text" class="validate">
+                                    <label for="last_name">Sub-título</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s2">
+                                    <input id="first_name" type="number" class="validate">
+                                    <label for="first_name">Ano</label>
+                                </div>
+                                <div class="input-field col s3">
+                                    <input id="cod-autor" type="text" class="validate" maxlength="10">
+                                    <label for="cod-autor">Descrição</label>
+                                </div>
+                                <div class="input-field col s3">
+                                    <input id="isbn" type="text" class="validate" maxlength="20">
+                                    <label for="isbn">ISBN</label>
+                                </div>
+                                <div class="input-field col s2">
+                                    <input id="cod-autor" type="number" class="validate">
+                                    <label for="cod-autor">Volume</label>
+                                </div>
+                                <div class="input-field col s2">
+                                    <input id="pag" type="number" class="validate">
+                                    <label for="pag">Nº Pág.</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input id="first_name" type="text" class="validate">
+                                    <label for="first_name">Autor</label>
+                                </div>
+                                <div class="input-field col s3">
+                                    <input id="cod-autor" type="text" class="validate">
+                                    <label for="cod-autor">Cód.Autor</label>
+                                </div>
+                                <div class="input-field col s3">
+                                    <input id="last_name" type="text" class="validate">
+                                    <label for="last_name">Tipo do livro</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input id="last_name" type="text" class="validate">
+                                    <label for="last_name">Tipo de Material</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input id="editora" type="text" class="validate">
+                                    <label for="editora">Editora</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s6 p-opacity" id="data-livro">
+                                    <p>Data da Public.</p>
+                                    <input id="datapub" type="date" class="validate kil">
+                                </div>
+                                <div class="input-field col s4 p-opacity" id="local-livro">
+                                    <p>Local da Public.</p>
+                                    <input id="localpub" type="text" class="validate">
+                                    <!-- <label for="localpub">Local de public.</label> -->
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s4">
+                                    <input id="estante" type="text" class="validate">
+                                    <label for="estante">Estante</label>
+                                </div>
+                                <div class="input-field col s6 p-opacity" id="foto-livro">
+                                    <p>Foto da Public.</p>
+                                    <input type="file" class="validate">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <script src="init.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+﻿/* ------------------------------- UNIVERSAIS ------------------------------------- */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 1205px) {
+  .menu-ajust{
+    position: relative;
+  }
+}
+
+/* @media screen and (max-width: 1000px) {
+  #login{
+   
+  }
+} */
+
+#modo-dark{
+  margin-left: 25px;
+}
+
+.escurecer{
+  background-color: grey;
+}
+
+#label-dark{
+  padding-left: 20px;
+}
+
+
+/* ------------------------------- MENU ------------------------------------- */
+
+#titulo {
+    margin-top: 6.5px;
+    margin-right: 15px;    
+}
+
+#leave {
+    margin-top: 20%;
+    clear: both;
+}
+
+#push_icon{
+  padding-left: 15px;
+}
+
+#text-table{
+  text-align: center;
+  padding-right: 80px;
+}
+
+.table-center{
+  margin-left: 25px;
+}
+
+/* ------------------------------- PÁG, LOGIN ------------------------------------- */
+
+#login{
+  background-image: url('images/biblio.jpeg');
+  /* background-image: url('images/mobile-teste.jpeg'); */
+  background-repeat: no-repeat;
+  background-size:100%;
+  overflow: auto;
+  padding: 3em;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.post{
+  margin-top: 75px;
+  width: 80%;
+  margin-left: 10%;
+  background-color:rgba(240, 248, 255, 0.8);
+}
+
+#link{
+  text-decoration: underline;
+  padding-bottom: 15px;
+}
+
+.card-login{
+  border-radius: 15px;
+  height: 370px;
+}
+
+#btnAuth{
+  margin-bottom: 15px;
+  margin-top: -50px;
+  border-radius: 10px;
+  /* border: 1px solid black; */
+  background-color:#21a69a;
+  /* #bbdefb blue lighten-4 */
+}
+
+
+/* ------------------------------- PÁG, TABELAS ------------------------------------- */
+
+#table-cadastro{
+  margin-top: 30px;
+}
+
+/* ------------------------------- PÁG, CAD.PUBLICAÇÕES ------------------------------------- */
+
+.cad-disable{
+  pointer-events: none;
+}
+
+.p-opacity p{
+  opacity: 0.5;
+}
+
+#foto-livro{
+  padding-left: 15%;
+}
