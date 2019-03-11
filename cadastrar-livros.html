@@ -110,43 +110,39 @@
                                     <input id="first_name" type="number" class="validate">
                                     <label for="first_name">Ano</label>
                                 </div>
-                                <div class="input-field col s3">
-                                    <input id="cod-autor" type="text" class="validate" maxlength="10">
-                                    <label for="cod-autor">Descrição</label>
-                                </div>
-                                <div class="input-field col s3">
-                                    <input id="isbn" type="text" class="validate" maxlength="20">
-                                    <label for="isbn">ISBN</label>
+                                <div class="input-field col s2">
+                                    <input id="pag" type="number" class="validate">
+                                    <label for="pag">Nº Pág.</label>
                                 </div>
                                 <div class="input-field col s2">
                                     <input id="cod-autor" type="number" class="validate">
                                     <label for="cod-autor">Volume</label>
                                 </div>
-                                <div class="input-field col s2">
-                                    <input id="pag" type="number" class="validate">
-                                    <label for="pag">Nº Pág.</label>
+                                <div class="input-field col s3">
+                                    <input id="isbn" type="text" class="validate" maxlength="20">
+                                    <label for="isbn">ISBN</label>
+                                </div>
+                                <div class="input-field col s3">
+                                    <input id="tipo-livro" type="text" class="validate" maxlength="10">
+                                    <label for="tipo-livro">Tipo da Public.</label>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="input-field col s6">
+                                <div class="input-field col s8">
+                                    <input id="tags" type="text" class="validate">
+                                    <label for="tags">Tags para pesquisa</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s5">
                                     <input id="first_name" type="text" class="validate">
                                     <label for="first_name">Autor</label>
                                 </div>
-                                <div class="input-field col s3">
+                                <div class="input-field col s2">
                                     <input id="cod-autor" type="text" class="validate">
                                     <label for="cod-autor">Cód.Autor</label>
                                 </div>
-                                <div class="input-field col s3">
-                                    <input id="last_name" type="text" class="validate">
-                                    <label for="last_name">Tipo do livro</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s6">
-                                    <input id="last_name" type="text" class="validate">
-                                    <label for="last_name">Tipo de Material</label>
-                                </div>
-                                <div class="input-field col s6">
+                                <div class="input-field col s5">
                                     <input id="editora" type="text" class="validate">
                                     <label for="editora">Editora</label>
                                 </div>
@@ -156,7 +152,7 @@
                                     <p>Data da Public.</p>
                                     <input id="datapub" type="date" class="validate kil">
                                 </div>
-                                <div class="input-field col s4 p-opacity" id="local-livro">
+                                <div class="input-field col s6 p-opacity" id="local-livro">
                                     <p>Local da Public.</p>
                                     <input id="localpub" type="text" class="validate">
                                     <!-- <label for="localpub">Local de public.</label> -->
@@ -171,6 +167,16 @@
                                     <p>Foto da Public.</p>
                                     <input type="file" class="validate">
                                 </div>
+                            </div>
+                            <div class="row">
+                                <form class="col s12">
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <textarea id="resumo-sinopse" class="materialize-textarea"></textarea>
+                                            <label for="resumo-sinopse">Resumo/Sinopse</label>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </form>
                     </div>
