@@ -115,3 +115,31 @@ body {
 #foto-livro{
   padding-left: 15%;
 }
+
+/* ------------------------------- PÁG, PUBLIC JÁ CADASTRADAS ------------------------------------- */
+
+#search-public{
+  margin-top: 10px;
+}
+
+.iconsearch{
+  margin-top: -10px;
+}
+
+#public-resumo{
+  width: 25%;
+  border-radius: 15px;
+}
+
+.pb{
+  height: 225px;
+  padding: 5px;
+}
+
+.pb-img img{
+  width: 90%;
+}
+
+#dados-public{
+  padding: 0 0 20px 25px;
+}
