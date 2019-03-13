@@ -13,6 +13,7 @@ $(document).ready(function () {
         draggable: true // Choose whether you can drag to open on touch screens
     }
     );
+    $('select').formSelect();
 });
 
 var body = document.querySelector('body');

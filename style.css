@@ -28,6 +28,10 @@ body {
   padding-left: 20px;
 }
 
+#logo{
+  padding-left: 35%;
+}
+
 
 /* ------------------------------- MENU ------------------------------------- */
 
@@ -116,6 +120,15 @@ body {
   padding-left: 15%;
 }
 
+.lineCad {
+  overflow-x: hidden;
+}
+
+.form-Marc label, select{
+  width: 50%;
+  margin-left: 220px;
+  margin-bottom: 60px;
+}
 /* ------------------------------- PÁG, PUBLIC JÁ CADASTRADAS ------------------------------------- */
 
 #search-public{
