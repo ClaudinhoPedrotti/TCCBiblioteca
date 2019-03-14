@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.0/css/materialize.min.css">
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.0/js/materialize.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="all"
+        rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-16x16.png">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -35,7 +38,6 @@
                 <a><span class="white-text name">RM/ETEC</span></a>
                 <a><span class="white-text email">Email/Login</span></a>
             </div>
-
             <div class="switch" id="modo-dark">
                 Modo Dark
                 <label id="label-dark">
@@ -45,7 +47,6 @@
                     On
                 </label>
             </div>
-
         </li>
 
         <li><a href="index.html"><i class="material-icons">home</i>Início</a></li>
@@ -86,7 +87,7 @@
     <div class="container">
         <div class="card" id="table-cadastro">
             <div class="card-tabs">
-                <ul class="tabs tabs-fixed-width">
+                <ul class="tabs tabs-fixed-width lineCad">
                     <li class="tab"><a href="#autores1">Autores</a></li>
                     <li class="tab"><a href="#editores2">Editores</a></li>
                     <li class="tab"><a href="#public-type">Tipos de publicação</a></li>
@@ -98,68 +99,93 @@
                         <form class="col s12">
                             <div class="row">
                                 <div class="input-field col s6">
-                                    <input id="first_name" type="text" class="validate">
-                                    <label for="first_name">Nome completo</label>
+                                    <input id="nome-completo-autor" type="text" class="validate">
+                                    <label for="nome-completo-autor">Nome completo</label>
                                 </div>
                                 <div class="input-field col s6">
-                                    <input id="last_name" type="text" class="validate">
-                                    <label for="last_name">Pseudômino</label>
+                                    <input id="segundo-nome-autor" type="text" class="validate">
+                                    <label for="segundo-nome-autor">Pseudômino</label>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="input-field col s6">
-                                    <input id="first_name" type="text" class="validate">
-                                    <label for="first_name">Telefone</label>
+                                    <input id="tel-autor" type="text" class="validate">
+                                    <label for="tel-autor">Telefone</label>
                                 </div>
                                 <div class="input-field col s3">
-                                    <input id="cod-autor" type="number" class="validate" maxlength="10">
-                                    <label for="cod-autor">RG</label>
+                                    <input id="rg-autor" type="number" class="validate" maxlength="10">
+                                    <label for="rg-autor">RG</label>
                                 </div>
                                 <div class="input-field col s3">
-                                    <input id="last_name" type="number" class="validate">
-                                    <label for="last_name">CPF</label>
+                                    <input id="cpf-autor" type="number" class="validate">
+                                    <label for="cpf-autor">CPF</label>
                                 </div>
                             </div>
                         </form>
                     </div>
                 </div>
-            </div>
 
-
-            <div class="card-content grey lighten-4">
-                <div id="Editoras">
+                <div id="editores2">
                     <div class="row">
                         <form class="col s12">
                             <div class="row">
                                 <div class="input-field col s6">
-                                    <input id="first_name" type="text" class="validate">
-                                    <label for="first_name">Nome da Editora</label>
+                                    <input id="nome-editora" type="text" class="validate">
+                                    <label for="nome-editora">Nome da Editora</label>
                                 </div>
                                 <div class="input-field col s6">
-                                    <input id="last_name" type="text" class="validate">
-                                    <label for="last_name">Nome Fantasia</label>
+                                    <input id="nome-fantasia-editora" type="text" class="validate">
+                                    <label for="nome-fantasia-editora">Nome Fantasia</label>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="input-field col s6">
-                                    <input id="first_name" type="text" class="validate">
-                                    <label for="first_name">Razão Social</label>
+                                    <input id="razao-social" type="text" class="validate">
+                                    <label for="razao-social">Razão Social</label>
                                 </div>
                                 <div class="input-field col s3">
-                                    <input id="cod-autor" type="number" class="validate" maxlength="10">
-                                    <label for="cod-autor">CNPJ</label>
+                                    <input id="cnpj-editora" type="number" class="validate" maxlength="10">
+                                    <label for="cnpj-editora">CNPJ</label>
                                 </div>
                                 <div class="input-field col s3">
-                                    <input id="last_name" type="number" class="validate">
-                                    <label for="last_name">Sigla</label>
+                                    <input id="sigla-editora" type="text" class="validate">
+                                    <label for="sigla-editora">Sigla</label>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input id="endereco-editora" type="text" class="validate">
+                                    <label for="endereco-editora">Endereço</label>
+                                </div>
+                                <div class="input-field col s2">
+                                    <input id="estado-editora" type="text" class="validate">
+                                    <label for="estado-editora">Estado</label>
+                                </div>
+                                <div class="input-field col s4">
+                                    <input id="cidade-editora" type="text" class="validate">
+                                    <label for="cidade-editora">Cidade</label>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="input-field col s4">
+                                    <input id="bairro-editora" type="text" class="validate">
+                                    <label for="bairro-editora">Bairro</label>
+                                </div>
+                                <div class="input-field col s3">
+                                    <input id="cep-editora" type="text" class="validate">
+                                    <label for="cep-editora">CEP</label>
+                                </div>
+                                <div class="input-field col s3">
+                                    <input id="num-editora" type="text" class="validate">
+                                    <label for="num-editora">Número</label>
                                 </div>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
-
-
         </div>
     </div>
 
